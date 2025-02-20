@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Identificación de fallas mecanicas MotoTune</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h1 class="Titulo"> MotoTune</h1>
+      <h3 class="Titulo">(Doctor de Motos)</h3>
+      <h2 class="Titulo2">Instrucciones: Acerca el dispositivo a tu motocicleta para que identifique donde podria estar la falla. </h2>
+    </div>
+    <div  class="main_div">
+      <center>
+        <br>
+        <button class="btn btn-warning" onclick="starClasification()"> ESCUCHAR</button>
+        <h3 class="Titulo2" id="result_label">Escucho: </h3>
+        <h4 class="Titulo2" id="result_confidence">Precision: </h4>
+       
+        <div class="gallery">
+          <div class="image-container"> 
+        <img src="AMORTIGUADOR_1.png" id="AMORTIGUADOR" width="200" height="200">
+        <p class="description">Suspensión</p>
+        <a href="indexAmortiguador.HTML" class="button">Ver más...</a>
+
+      </div>
+
+      <div class="image-container"> 
+        <img src="MOTO_1.png" id="MOTOR" width="200" height="200">
+        <p class="description">Motor</p>
+        <a href="indexMotor.HTML" class="button">Ver más...</a>
+
+      </div>
+
+      <div class="image-container"> 
+        <img src="CADENA_1.png" id="CADENA" width="200" height="200">
+            <p class="description">Cadena de transmisión</p>
+            <a href="indexCadena.HTML" class="button">Ver más...</a>
+
+          </div>
+
+          <div class="image-container"> 
+        <img src="ESCAPE_1.png" id="ESCAPE" width="200" height="200">
+            <p class="description">Escape</p>
+            <a href="indexEscape.HTML" class="button">Ver más...</a>
+
+          </div>
+
+          <div class="image-container"> 
+       <img src="LLANTA_1.png" id="LLANTA" width="200" height="200">
+            <p class="description">Llanta</p>
+            <a href="indexLlanta.HTML" class="button">Ver más...</a>
+
+          </div>
+
+          <div class="image-container"> 
+        <img src="FRENOS_1.png" id="FRENOS" width="200" height="200">
+            <p class="description">Frenos de disco</p>
+            <a href="indexFrenos.HTML" class="button">Ver más...</a>
+
+      </div>
+    </div>
+      </center>
+    </div>
+    <div class="copy_rigth_footer">
+        <h3 class="Titulo2">Desarrollado por Hector Gerardo Ramirez Cabrera y Renata Audirac Pelaez </h3>
+    </div>
+<script src="main.js"></script>
+  </body>
+</html>
